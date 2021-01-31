@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title>测试中</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/font.css">
+		<link rel="stylesheet" href="./css/xadmin.css">
+		<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./lib/layui/layui.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./js/xadmin.js"></script>
+		<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+		<!--[if lt IE 9]>
+	  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+	  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	</head>
+	<body>
+		<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+			<ul class="layui-tab-title">
+				<li class="layui-this">油机图表</li>
+				<li>油机数据与控制</li>
+				<li>参数设置</li>
+			</ul>
+			<div class="layui-tab-content" style="height: 100px;">
+				<div class="layui-tab-item layui-show">
+					<div class="x-body">
+						<form class="layui-form" action="">
+							<div class="Partition">
+								<div class="oilengine-form">
+									<div class="layui-form-item">
+										<div class="layui-form-item">
+
+											<div class="layui-inline">
+												<label class="layui-form-label">油机编号</label>
+												<div class="layui-input-inline" style="width: 100px;">
+													<input type="text" name="title" required lay-verify="required" placeholder="请输入油机编号" autocomplete="off"
+													 class="layui-input shuuer">
+												</div>
+
+											</div>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<div class="layui-inline">
+												<label class="layui-form-label">油机型号</label>
+												<div class="layui-input-inline" style="width: 100px;">
+													<input type="text" name="title" required lay-verify="required" placeholder="请输入油机型号" autocomplete="off"
+													 class="layui-input shuuer">
+												</div>
+											</div>
+
+										</div>
+										<div class="layui-form-item">
+											<div class="layui-inline">
+												<label class="layui-form-label">油机定位</label>
+												<div class="layui-form-mid">东经</div>
+												<div class="layui-input-inline" style="width: 120px;">
+													<input type="text" name="price_min" placeholder="118°21°" autocomplete="off" class="layui-input"> </div>
+												<div class="layui-form-mid">北纬</div>
+												<div class="layui-input-inline" style="width: 120px;">
+													<input type="text" name="price_max" placeholder="CYJ11-3-48HB" autocomplete="off" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<label class="layui-form-label">网络设备</label>
+											<div class="layui-input-block">
+												<input type="text" name="title" required lay-verify="required" placeholder="请输入网络设备" autocomplete="off"
+												 class="layui-input shuueres">
+
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<label class="layui-form-label">SIM卡号</label>
+											<div class="layui-input-block">
+												<input type="text" name="title" required lay-verify="required" placeholder="请输入SIM卡号" autocomplete="off"
+												 class="layui-input shuueres">
+
+											</div>
+										</div>
+										<div class="layui-form-item">
+
+											<div class="layui-inline">
+												<label class="layui-form-label">油机负责人</label>
+												<div class="layui-input-inline" style="width: 100px;">
+													<input type="text" name="title" required lay-verify="required" placeholder="请输入油机负责人" autocomplete="off"
+													 class="layui-input shuuer">
+												</div>
+
+											</div>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<div class="layui-inline">
+												<label class="layui-form-label">联系电话</label>
+												<div class="layui-input-inline" style="width: 100px;">
+													<input type="text" name="title" required lay-verify="required" placeholder="请输入联系电话" autocomplete="off"
+													 class="layui-input shuuer">
+												</div>
+											</div>
+
+										</div>
+										<div class="layui-form-item layui-form-text">
+											<label class="layui-form-label">详细地址</label>
+											<div class="layui-input-block">
+												<textarea name="desc" placeholder="请输入内容" class="layui-textarea shuuers"></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 视频区域 -->
+								<div class="oilengine-video">
+									<div class="videos">
+										<video width="100%" height="100%" controls autoplay loop="loop">
+											<source src="./img/WeChat_20210129225555.ogg" type="video/ogg">
+											<source src="./img/WeChat_20210129225555.mp4" type="video/mp4">
+											<source src="movie.webm" type="video/webm">
+											<object data="movie.mp4" width="100%" height="100%">
+												<embed width="100%" height="100%s" src="movie.swf">
+											</object>
+										</video>
+									</div>
+								</div>
+								<!-- 清除浮动 -->
+								<!-- <div class="clear"></div> -->
+							</div>
+							<div class="Partitions">
+								<!-- 图片区域 -->
+								<div class="oilengine-analysis">
+									<div class="analysis">
+										<img src="img/dl.png" alt="" />
+										<img src="img/ph.png" alt="" />
+									</div>
+									<div class="analysies">
+										<h6 class="intelligence">智能分析：<p class="rate">平衡率：46.7%</p>
+										</h6>
+										<div class="clear"></div>
+										<div>
+											<ul class="situation">
+												<li style="color: red;">正常</li>
+												<li>可能异常</li>
+												<li>异常</li>
+												<li>危险</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+								<!-- 功能区域 -->
+								<div class="function-area">
+									<div class="function">
+										<!-- <img src="img/yoji1.jpg" alt="" /> -->
+										<img src="img/gogntu.png" alt="" />
+									</div>
+									<div class="functions">
+										<h6 class="intelligence">智能分析：<p class="rate">正常工作</p>
+									</div>
+									<div style="clear: both;"></div>
+									<div>
+										<ul class="area">
+											<li>吸入部分漏失</li>
+											<li>气体影响</li>
+											<li>油井结蜡</li>
+											<li>排出部分漏失</li>
+											<li>油井出砂</li>
+											<li>油井进水</li>
+											<li>活塞脱出工作筒</li>
+											<li>油井自喷</li>
+											<li>活塞向下撞击固定阀</li>
+											<li>井口摩擦力大</li>
+											<li>仪器故障</li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="layui-tab-item">
+					<form class="layui-form ayui-col-md12 x-so" action="">
+						<div class="area">
+							<!-- 数据区 -->
+							<div class="data-area">
+								<h2>数据区</h2>
+								<div class="layui-form-item">
+									<div class="layui-inline">
+										<label class="layui-form-label">泵径</label>
+										<div class="layui-input-inline">
+											<input type="tel" name="phone" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+									<div class="layui-inline">
+										<label class="layui-form-label">泵深</label>
+										<div class="layui-input-inline">
+											<input type="text" name="email" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+								</div>
+
+								<div class="layui-form-item">
+									<div class="layui-inline">
+										<label class="layui-form-label">冲程</label>
+										<div class="layui-input-inline">
+											<input type="tel" name="phone" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+									<div class="layui-inline">
+										<label class="layui-form-label">冲次</label>
+										<div class="layui-input-inline">
+											<input type="text" name="email" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+								</div>
+
+								<div class="layui-form-item">
+									<div class="layui-inline">
+										<label class="layui-form-label">产液</label>
+										<div class="layui-input-inline">
+											<input type="tel" name="phone" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+									<div class="layui-inline">
+										<label class="layui-form-label">泵效</label>
+										<div class="layui-input-inline">
+											<input type="text" name="email" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+								</div>
+
+								<div class="layui-form-item">
+									<div class="layui-inline">
+										<label class="layui-form-label">泵况设度</label>
+										<div class="layui-input-inline">
+											<input type="tel" name="phone" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+									<div class="layui-inline">
+										<label class="layui-form-label">平衡块</label>
+										<div class="layui-input-inline">
+											<input type="text" name="email" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+								</div>
+
+								<div class="layui-form-item">
+									<div class="layui-inline">
+										<label class="layui-form-label">平衡半径</label>
+										<div class="layui-input-inline">
+											<input type="tel" name="phone" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+									<div class="layui-inline">
+										<label class="layui-form-label">井压</label>
+										<div class="layui-input-inline">
+											<input type="text" name="email" autocomplete="off" class="layui-input">
+										</div>
+									</div>
+								</div>
+
+
+								<div class="layui-form-item">
+									<label class="layui-form-label">电机电压</label>
+									<div class="layui-input-inline">
+										<input type="password" name="password" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">电机电流</label>
+									<div class="layui-input-inline">
+										<input type="password" name="password" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+							</div>
+
+
+							<!-- 控制区 -->
+							<div class="control-area">
+								<h2>控制区</h2>
+								<div class="layui-form-item dhj">
+									<label class="layui-form-label" style="font-size: 15px;">开启抽油机</label>
+									<div class="layui-input-block">
+										<input type="checkbox" checked="" name="open" lay-skin="switch" lay-filter="switchTest" lay-text="ON|OFF">
+									</div>
+								</div>
+								<h3 class="explain">工作时段自动开启与关闭</h3>
+								<div class="date">
+									<div class="open">
+										<input class="layui-input" name="start" id="start"> &nbsp;- &nbsp;
+										<input class="layui-input" name="end" id="end"> &nbsp;&nbsp;<strong style="font-size: 18px;">开启</strong>
+									</div>
+									<div class="clo">
+										<input class="layui-input" name="starts" id="starts"> &nbsp;- &nbsp;
+										<input class="layui-input" name="ends" id="ends"> &nbsp;&nbsp;<strong style="font-size: 18px;">关闭</strong>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- <div class="layui-form-item">
+							<label for="L_repass" class="layui-form-label">
+							</label>
+							<button class="layui-btn" lay-filter="add" lay-submit="">
+								增加
+							</button>
+						</div> -->
+					</form>
+				</div>
+				<div class="layui-tab-item">
+					<form class="layui-form ayui-col-md12 x-so" action="">
+
+						<div class="layui-form-item">
+							<label class="layui-form-label">参数1</label>
+							<div class="layui-input-inline">
+								<input type="password" name="password" lay-verify="pass" autocomplete="off" class="layui-input">
+							</div>
+							<div class="layui-form-mid layui-word-aux">设置同步</div>
+
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">参数2</label>
+							<div class="layui-input-inline">
+								<input type="password" name="password" lay-verify="pass" autocomplete="off" class="layui-input">
+							</div>
+							<div class="layui-form-mid layui-word-aux">设置同步</div>
+
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">参数3</label>
+							<div class="layui-input-inline">
+								<input type="password" name="password" lay-verify="pass" autocomplete="off" class="layui-input">
+							</div>
+							<div class="layui-form-mid layui-word-aux">设置同步</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script>
+			// 名字要和上面一致
+			layui.use('laydate', function() {
+				var laydate = layui.laydate;
+
+				//执行一个laydate实例
+				laydate.render({
+					elem: '#start' //指定元素
+				});
+
+				//执行一个laydate实例
+				laydate.render({
+					elem: '#end' //指定元素
+				});
+
+				//执行一个laydate实例
+				laydate.render({
+					elem: '#starts' //指定元素
+				});
+
+				//执行一个laydate实例
+				laydate.render({
+					elem: '#ends' //指定元素
+				});
+			});
+		</script>
+
+		<script>
+			//Demo
+			layui.use('form', function() {
+				var form = layui.form;
+
+				//监听提交
+				form.on('submit(formDemo)', function(data) {
+					layer.msg(JSON.stringify(data.field));
+					return false;
+				});
+			});
+		</script>
+	</body>
+</html>
